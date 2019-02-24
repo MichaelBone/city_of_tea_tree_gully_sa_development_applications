@@ -127,7 +127,7 @@ async function main() {
                 informationUrl: DevelopmentApplicationMainUrl,
                 commentUrl: CommentUrl,
                 scrapeDate: moment().format("YYYY-MM-DD"),
-                receivedDate: receivedDate.isValid ? receivedDate.format("YYYY-MM-DD") : ""
+                receivedDate: receivedDate.isValid() ? receivedDate.format("YYYY-MM-DD") : ""
             });
         }
     }
